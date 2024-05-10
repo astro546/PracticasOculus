@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 56d7dd8d4f901b54fbcc9b0d95f63a01
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - oculusControl: {fileID: 112276, guid: 55e64a5d3d6bc8a4ca12ad93f091cdac, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

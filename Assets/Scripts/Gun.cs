@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
+/* Clase del arma */
 public class Gun : MonoBehaviour
 { 
     public GameObject bulletPrefab;

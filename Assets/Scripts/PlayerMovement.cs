@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     float verticalInput;
     Vector3 moveDirection;
     Rigidbody rb;
+    CheckXRDisplay check;
 
     private void MyInput(){
         horizontalInput = Input.GetAxisRaw("Horizontal");
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        check = new CheckXRDisplay();
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
     }
