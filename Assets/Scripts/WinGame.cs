@@ -38,7 +38,6 @@ public class WinGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //bool goalPos = playerPos.position.z > 18 && playerPos.position.x < -27;
         bool zombiesAreaDead = ZombiesAreDead(zombies);
         if(zombiesAreaDead){
             winGame = true;

@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ZombieCollision : MonoBehaviour
 {
-    int zombieHits;
+    public int zombieHits;
     int zombieHitsMax = 40;
     public bool userDefeat = false;
     Canvas canvas;
     public GameObject defeatUI;
+    public GameObject oculusControl;
+    public GameObject Gun;
 
 
     void OnCollisionEnter(Collision collision){
@@ -36,8 +39,12 @@ public class ZombieCollision : MonoBehaviour
     void Update()
     {
         if (userDefeat){
+            this.transform.position = new Vector3(-0.15f,-0.33f,-8.0f);
+            this.transform.GetChild(4).GetComponent<StartGame>().gameStarted = false;
             canvas.enabled = true;
             defeatUI.SetActive(true);
+            oculusControl.SetActive(true);
+            Gun.SetActive(false);
         }
     }
 }

@@ -25,6 +25,7 @@ public class UserDetector : MonoBehaviour
         gameStarted = User.parent.GetChild(4).GetComponent<StartGame>().gameStarted;
         if(userDetected  && !zombieDefeat && !userDefeat && gameStarted){
             enemyAnimator.SetInteger("action", 1);
+            enemyAnimator.SetInteger("revive", 0);
             enemyAgent.destination = User.position;
         } else {
             enemyAnimator.SetInteger("action", 0);

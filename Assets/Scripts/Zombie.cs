@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class Zombie : MonoBehaviour
 {
-    private int bulletHit;
+    public int bulletHit;
     public bool zombieAttack;
     private Animator enemyAnimator;
 
@@ -13,9 +13,9 @@ public class Zombie : MonoBehaviour
         if (collision.gameObject.CompareTag("Bulet")){
             bulletHit++;
             if (bulletHit == 100){
+                enemyAnimator.SetInteger("defeat", 1);
                 enemyAnimator.SetInteger("action",0);
                 enemyAnimator.SetInteger("attack",0);
-                enemyAnimator.SetInteger("defeat", 1);
             }
         } else {
             zombieAttack = true;
