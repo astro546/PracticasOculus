@@ -967,6 +967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38918183bfbca5947b432c682e8eb298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletHit: 0
   zombieAttack: 0
 --- !u!4 &191444452 stripped
 Transform:
@@ -5690,7 +5691,7 @@ Transform:
   m_GameObject: {fileID: 836115247}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.13, y: -0.48, z: -8.23}
+  m_LocalPosition: {x: -0.13, y: -0.48, z: -11.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5769,6 +5770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5596e5efa97d592499e10da323907022, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zombieHits: 0
   userDefeat: 0
   defeatUI: {fileID: 343131633}
   oculusControl: {fileID: 1651792783}
@@ -6679,6 +6681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38918183bfbca5947b432c682e8eb298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletHit: 0
   zombieAttack: 0
 --- !u!4 &1068761001 stripped
 Transform:
@@ -8413,6 +8416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38918183bfbca5947b432c682e8eb298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletHit: 0
   zombieAttack: 0
 --- !u!195 &1311946113
 NavMeshAgent:
@@ -13916,6 +13920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38918183bfbca5947b432c682e8eb298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletHit: 0
   zombieAttack: 0
 --- !u!4 &2026292732 stripped
 Transform:

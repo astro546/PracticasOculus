@@ -14,6 +14,7 @@ public class UserDetector : MonoBehaviour
     bool gameStarted;
 
     void OnTriggerEnter(Collider collider){
+        enemyAgent.enabled = true;
         userDetected = true;
     }
 
