@@ -5691,7 +5691,7 @@ Transform:
   m_GameObject: {fileID: 836115247}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.13, y: -0.48, z: -11.9}
+  m_LocalPosition: {x: -0.13, y: -0.48, z: -11.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5758,6 +5758,7 @@ MonoBehaviour:
   oculusControl: {fileID: 1651792783}
   Gun: {fileID: 1828269668}
   VRHand: {fileID: 141957645}
+  LaserPointer: {fileID: 1446918245}
 --- !u!114 &836115252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12979,6 +12980,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f28c48f00f3b43640afdea402f41aeff, type: 3}
       propertyPath: m_Name
       value: mp7
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f28c48f00f3b43640afdea402f41aeff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
